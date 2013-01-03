@@ -27,7 +27,7 @@ class Zork3 < Formula
     copy_without('.', './share/zork3', 'share')
     file = File.new("zork3", "w+", 0755)
     file.write "#!/bin/bash
-jzip #{prefix}/share/zork3/DATA/ZORK1.DAT
+jzip #{prefix}/share/zork3/DATA/ZORK3.DAT
 "
     bin.install "zork3"
     share.install "share/zork3"
