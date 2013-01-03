@@ -14,7 +14,7 @@ def copy_without(source_path, target_path, exclude)
   end
 end
 
-class Zork1 < Formula
+class Zork3 < Formula
   homepage 'http://www.csd.uwo.ca/Infocom/'
   url 'http://www.csd.uwo.ca/Infocom/Download/zork3.zip'
   version '1'
