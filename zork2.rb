@@ -15,12 +15,12 @@ def copy_without(source_path, target_path, exclude)
 end
 
 class Zork2 < Formula
-  homepage 'http://www.csd.uwo.ca/Infocom/'
-  url 'http://www.csd.uwo.ca/Infocom/Download/zork2.zip'
+  homepage 'http://www.infocom-if.org/downloads/downloads.html'
+  url 'http://www.infocom-if.org/downloads/zork2.zip'
   version '1'
   sha1 'd4c4be791e6bbb97f486b317a6631c9e92a93b79'
 
-  depends_on 'jzip' => :alt
+  depends_on 'jzip'
 
   def install
     FileUtils.makedirs("./share/zork2")
