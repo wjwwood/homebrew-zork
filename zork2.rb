@@ -6,7 +6,7 @@ class Zork2 < Formula
   homepage 'http://www.infocom-if.org/downloads/downloads.html'
   url 'http://www.infocom-if.org/downloads/zork2.zip'
   version '1'
-  sha1 'd4c4be791e6bbb97f486b317a6631c9e92a93b79'
+  #sha1 'd4c4be791e6bbb97f486b317a6631c9e92a93b79'
 
   depends_on 'jzip'
 
