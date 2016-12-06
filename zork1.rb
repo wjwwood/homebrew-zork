@@ -8,7 +8,7 @@ class Zork1 < Formula
   version '1'
   #sha1 'c0792003a0f4f9ae5f7d058c95142ad2cb052e16'
 
-  depends_on 'jzip'
+  #depends_on 'jzip'
 
   def install
     def copy_without(source_path, target_path, exclude)
@@ -27,7 +27,7 @@ class Zork1 < Formula
     copy_without('.', './share/zork1', 'share')
     file = File.new("zork1", "w+", 0755)
     file.write "#!/bin/bash
-jzip #{prefix}/share/zork1/DATA/ZORK1.DAT
+zip #{prefix}/share/zork1/DATA/ZORK1.DAT
 "
     bin.install "zork1"
     share.install "share/zork1"
