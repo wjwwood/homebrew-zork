@@ -3,7 +3,7 @@ require 'formula'
 class Jzip < Formula
   homepage 'http://jzip.sourceforge.net/'
   url 'http://download.sourceforge.net/jzip/jzip21-10oct2000.zip'
-  sha1 '850bf115a7ad59a14b0189d28c3486b972448a1c'
+  #sha1 '850bf115a7ad59a14b0189d28c3486b972448a1c'
   version '2.1'
 
   def patches
