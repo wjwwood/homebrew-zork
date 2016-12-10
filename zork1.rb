@@ -8,7 +8,7 @@ class Zork1 < Formula
   version '1'
   sha256 '645027fb189ba8fd30daecca609e68e2bf2337b76e7b4f925ccf58778f3eac40'
 
-  #depends_on 'jzip'
+  depends_on 'jzip'
 
   def install
     def copy_without(source_path, target_path, exclude)
