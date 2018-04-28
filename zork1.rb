@@ -8,7 +8,7 @@ class Zork1 < Formula
   version '1'
   sha256 '645027fb189ba8fd30daecca609e68e2bf2337b76e7b4f925ccf58778f3eac40'
 
-  depends_on 'jzip'
+  depends_on 'fizmo'
 
   def install
     def copy_without(source_path, target_path, exclude)
@@ -27,7 +27,7 @@ class Zork1 < Formula
     copy_without('.', './share/zork1', 'share')
     file = File.new("zork1", "w+", 0755)
     file.write "#!/bin/bash
-jzip #{prefix}/share/zork1/DATA/ZORK1.DAT
+fizmo-console #{prefix}/share/zork1/DATA/ZORK1.DAT
 "
     bin.install "zork1"
     share.install "share/zork1"
