@@ -7,7 +7,7 @@ class Jzip < Formula
   version '2.1'
 
   def patches
-    DATA
+    :DATA
   end
 
   def install
