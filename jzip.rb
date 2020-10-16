@@ -6,9 +6,7 @@ class Jzip < Formula
   sha256 '722a81ee1a9cff51f468dbf38c54a2b149e6cda71e6c540caf4ec4308e290d9d'
   version '2.1'
 
-  def patches
-    :DATA
-  end
+  patch :DATA
 
   def install
     ENV.delete("SDKROOT")
